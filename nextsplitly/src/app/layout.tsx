@@ -33,7 +33,7 @@ export default function RootLayout({
       >
         <Header/>
         
-        <main className="flex">
+        <main className="flex relative">
           <SideNav/>
           <section style={{paddingTop:SIZES.buttonHeight__dec}}>
             <Providers>{children}</Providers>

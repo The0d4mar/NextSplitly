@@ -4,7 +4,8 @@ export const COLORS = {
     buttonColor_hover: '#C3A570',
     buttonColor_active: '#C3A570',
     fontColor_main: '#111111',
-    elementColor: '#D9D9D9'
+    elementColor: '#D9D9D9',
+    fontColor_opt: '#726D6D',
 }
 
 export const SIZES = {
@@ -17,6 +18,7 @@ export const SIZES = {
     fontSizeRegual: '16px',
     fontWeighRegual: 'medium',
     fontSizeSmall: '12px',
-    fontSizeSmall_2: '11px'
+    fontSizeSmall_2: '11px',
+    fontSizeSmall_3: '10px',
 
 }
