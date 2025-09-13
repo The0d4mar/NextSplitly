@@ -1,4 +1,4 @@
-
+'use client'
 import { Operation, PlotPoint } from '@/interfaces/interfaces';
 import { SIZES } from '@/styled/theme';
 import React, {FC} from 'react';

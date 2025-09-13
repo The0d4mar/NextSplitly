@@ -1,3 +1,6 @@
+
+
+
 import { SideNavBtn } from '@/styled/sidenavbtn';
 import React, {FC} from 'react';
 import Link from 'next/link';
@@ -13,7 +16,7 @@ const SideNav:FC<SideNavProps> = () => {
       
       <Link href='/'><SideNavBtn $isdisabled>ВГ</SideNavBtn></Link>
 
-      <Link href='/' ><SideNavBtn $isActive><ChartLine/> показатели</SideNavBtn></Link>
+      <Link href='/indicators' ><SideNavBtn><ChartLine/> показатели</SideNavBtn></Link>
 
       <Link href='/'><SideNavBtn><RefreshCcw/> операции</SideNavBtn></Link>
 
