@@ -1,6 +1,6 @@
-import { useOperationModifier } from '@/hooks/useOperationModifaer';
-import { useSliceOperation } from '@/hooks/useSliceOperation';
+
 import { Operation, PlotPoint } from '@/interfaces/interfaces';
+import { SIZES } from '@/styled/theme';
 import React, {FC} from 'react';
 import { LineChart, Line, CartesianGrid, XAxis, YAxis, Legend, Tooltip } from 'recharts';
 
@@ -14,7 +14,7 @@ interface MainPlot__PlotProps{
 }
 const MainPlot__Plot:FC<MainPlot__PlotProps> = ({data, showPeriod, chosenPeriod = []}) => {
       return (
-     <LineChart width={600} height={300} data={data}>
+     <LineChart height={Number(SIZES.PlotsHeight)} data={data} width={Number(SIZES.plotWidht)}>
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis dataKey="date" />
         <YAxis />

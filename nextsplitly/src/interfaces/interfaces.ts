@@ -47,4 +47,4 @@ export type PlotPoint = {
 
 export type PeriodKey = "days" | "months" | "years";
 
-export type PieRow = { category: string; value: number };
+export type PieRow = { category: string; value: number; color?: string };

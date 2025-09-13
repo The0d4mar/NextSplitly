@@ -1,14 +1,12 @@
 'use client'
 
+import DynamicPlotBlock, { DynamicPlotFlag } from "@/components/shades/DynamicPlotBlock";
 import IndicatorsCont from "@/components/shades/IndicatorsCont";
 import LinePlotBlock from "@/components/shades/LinePlotBlock";
 import PiePlotBlock from "@/components/shades/PiePlotBlock";
 import UserFilterPart from "@/components/shades/UserFilterPart";
-import UserFiltersBtn from "@/components/shades/UserFiltersBtn/UserFiltersBtn";
 import { cn } from "@/lib/utils";
 import { RootState } from "@/store/store";
-import { MainPageContainer } from "@/styled/MainPageCont";
-import { COLORS, SIZES } from "@/styled/theme";
 import { useSelector, useDispatch } from 'react-redux';
 
 
@@ -22,6 +20,8 @@ export default function Home() {
         <section className={cn('flex flex-col relative gap-5', 'MainPage__customizeBlock')}>
           <IndicatorsCont children={<LinePlotBlock/>}/>
           <IndicatorsCont children={<PiePlotBlock/>}/>
+          <IndicatorsCont children={<DynamicPlotBlock header="Динамика расходов" flag={DynamicPlotFlag.expenses}/>}/>
+          <IndicatorsCont children={<DynamicPlotBlock header="Динамика доходов" flag={DynamicPlotFlag.income}/>}/>
         </section>
     </div>
   );
