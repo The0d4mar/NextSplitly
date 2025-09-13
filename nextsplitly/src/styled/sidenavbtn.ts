@@ -6,6 +6,7 @@ import { COLORS, SIZES } from "./theme";
 
 interface ButtonProps{
     $isdisabled?: boolean
+    $isActive?: boolean;
 }
 
 
@@ -19,7 +20,7 @@ interface ButtonProps{
     gap:10px;
     justify-content: center;
     align-items: center;
-    background-color: ${({$isdisabled}) => ($isdisabled ? "#E1A231" : "transperent")};
+    background-color: ${({$isdisabled, $isActive}) => ($isdisabled ? "#E1A231" : $isActive ?COLORS.buttonColor_hover : "transperent")};
     font-weight: bold;
     font-size: ${({ $isdisabled }) => ($isdisabled ? SIZES.fontSizeH1 : SIZES.fontSizeSmall_2)};
     color: ${COLORS.mainBGColor};

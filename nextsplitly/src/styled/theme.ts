@@ -1,3 +1,5 @@
+import PlotsHeader from "@/components/PlotsHeader"
+
 export const COLORS = {
     mainBGColor: '#FFFFFF',
     buttonColor: '#FCDDA5',
@@ -9,6 +11,7 @@ export const COLORS = {
 }
 
 export const SIZES = {
+    //шрифты
     buttonWidth__dec: '80px',
     buttonHeight__dec: '80px',
     fontSizeH1: '32px',
@@ -20,5 +23,15 @@ export const SIZES = {
     fontSizeSmall: '12px',
     fontSizeSmall_2: '11px',
     fontSizeSmall_3: '10px',
+    
+    //графики
+    plotWidht: 1000,
+    PlotsHeight: 440,
+    tablet: {
+
+    },
+    mobile:{
+
+    },
 
 }
